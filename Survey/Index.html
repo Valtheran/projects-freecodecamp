@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">Please fill out this survey</p>
+  <form id="survey-form">
+    <fieldset>
+      <label for="name" id="name-label">Name: <input id="name" name="name" type="text" placeholder="Full name" required /></label>
+      <label for="email" id="email-label">Email: <input id="email" name="email" type="email" placeholder="Email" required /></label>
+      <label for="number" id="number-label">Input your age (years): <input id="number" type="number" name="number" min="18" max="120" placeholder="Age" /></label>
+      </fieldset>
+      <fieldset>
+      <label for="referrer" id="list-dropdown">Satisfaction level
+          <select id="dropdown" name="referrer">
+            <option value="1">Good</option>
+            <option value="2">Regular</option>
+            <option value="3">Bad</option>
+          </select>
+        </label>
+        Would you repeat this survey?
+      <label for="recommend-yes">
+ <input id="recommend-yes" type="radio" name="recommend" class="inline" value="1"/>Yes</label>
+      <label for="recommend-maybe"><input id="recommend-maybe" type="radio" name="recommend" class="inline" value="2"/> Maybe</label>
+      <label for="recommend-no"><input id="recommend-no" type="radio" name="recommend" class="inline" value="3"/> No</label>
+      </fieldset>
+      <fieldset>
+       What's types of surveys you do?
+      <label for="repeat-yes"> 
+          <input id="repeat-yes" type="checkbox" name="repeat" value="1" class="inline" required/> Google Forms
+          <label for="repeat-no">
+          <input id="repeat-no" type="checkbox" name="repeat" value="2" class="inline" required/> Others
+          </fieldset>
+      <label for="comment">Comments:
+          <textarea id="comment" name="comment" rows="3" cols="30" placeholder="Make a comment..."></textarea>
+        </label>
+    <input id="submit" type="submit" value="Submit"/>
+   </fieldset>
+  </form>
+</body>
+
+</html>
